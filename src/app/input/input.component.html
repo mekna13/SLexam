@@ -1,0 +1,17 @@
+<h1>Add News</h1>
+
+<form #myform="ngForm" (ngSubmit) = "submitNews(myform)" >
+  <input type = "text" name = "author" placeholder = "Your full name" ngModel>
+  <br/>
+  
+  <input type = "text" name = "newsTitle" placeholder = "newsTitle" ngModel>
+  <br/>
+
+  <br>
+  <input type = "textarea" name = "newsBody" placeholder = "newsBody" ngModel>
+  <br/>
+
+  <input type="date" name="date" ngModel>
+  <input type="text" name="pubStatus" ngModel>
+  <input type = "submit" value = "Send">
+</form>
